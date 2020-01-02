@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.ListIterator;
-import java.util.Scanner;
 import java.util.Set;
 
 public class DiGraph<T> implements Graph<T> {
@@ -24,18 +23,7 @@ public class DiGraph<T> implements Graph<T> {
         vInfo = new ArrayList<VertexInfo<T>>();
         vtxMap = new HashMap<T, Integer>();
     }
-
-    public static DiGraph<String> readGraph() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Jumlah vertex: ");
-        int nVtx = scan.nextInt();
-        for (int j = 0; j <= nVtx; j++) {
-            graph.addVertex(scan.nextLine());
-        }
-        return graph;
-    }
-    
-    
+  
     public static DiGraph<String> readGraph(String fileName) throws FileNotFoundException, IOException {
         File file = new File(fileName);
 
@@ -251,7 +239,7 @@ public class DiGraph<T> implements Graph<T> {
 
     @Override
     public String toString() {
-        return "DiGraph{" + "vInfo=" + vInfo + '}';
+        return " " + vInfo;
     }
 
     public int inDegree(T v) {

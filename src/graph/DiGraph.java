@@ -23,7 +23,7 @@ public class DiGraph<T> implements Graph<T> {
         vInfo = new ArrayList<VertexInfo<T>>();
         vtxMap = new HashMap<T, Integer>();
     }
-
+  
     public static DiGraph<String> readGraph(String fileName) throws FileNotFoundException, IOException {
         File file = new File(fileName);
 
@@ -239,7 +239,7 @@ public class DiGraph<T> implements Graph<T> {
 
     @Override
     public String toString() {
-        return "DiGraph{" + "vInfo=" + vInfo + '}';
+        return " " + vInfo;
     }
 
     public int inDegree(T v) {

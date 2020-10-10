@@ -29,7 +29,7 @@ public class VertexInfo<T> {
 
     @Override
     public String toString() {
-        return "VertexInfo{" + "vertex=" + vertex + ", edgeList=" + edgeList + ", inDegree=" + inDegree + ", outDegree=" + outDegree + "}\n";
+        return " VertexInfo{" + "vertex=" + vertex + ", edgeList=" + edgeList + ", inDegree=" + inDegree + ", outDegree=" + outDegree + "}\n";
     }
 
 }
